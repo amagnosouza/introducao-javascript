@@ -10,3 +10,11 @@ A representação do HTML pela variável document
 A função que faz busca querySelector()
 
 Preferir selecionar por #id ou .classe
+------------------------------------------------------------------------------------------------------------
+_aula02_
+
+O operador lógico de OU ( || )
+
+O operador lógico de E ( && )
+
+Busca de elementos
