@@ -3,7 +3,7 @@ var titulo = document.querySelector(".titulo");
 titulo.textContent = "Aparecida Nutricionista Maluca";
 
 var pacientes = document.querySelectorAll(".paciente");
-console.log(pacientes);
+//console.log(pacientes);
 
 for (var i = 0; i < pacientes.length; i++){
     // alterar a variavel dentro do FOR
@@ -40,13 +40,13 @@ for (var i = 0; i < pacientes.length; i++){
 
     // calcular o imc
     if (pesoEValido && alturaEValida){
-        var imc = CalculaImc(peso,altura);
+        var imc = calculaImc(peso,altura);
         // atribui o calculo do imc na variavel tdImc
         tdImc.textContent = imc;
     }
 }
 
-function CalculaImc(peso, altura){
+function calculaImc(peso, altura){
     var imc = 0
     imc = peso / (altura ** 2);
     return imc.toFixed(2);
