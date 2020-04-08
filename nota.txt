@@ -29,3 +29,14 @@ Vimos como manipular estilos com a propriedade .style
 Vimos que devemos utilizar camelCase quando queremos modificar uma propriedade que tenha duas palavras, como a background-color
 
 A boa prática de não alterar o estilo diretamente no Javascript e sim modificar as classes dos elementos com a propriedade .classList
+------------------------------------------------------------------------------------------------------------
+_aula04_
+Escutar eventos, 
+
+Manipular formulários 
+
+Criar novos Elementos no HTML.
+
+event.preventDefault() previne o comportamento padrão de um formulario que é enviar os dados para outra pagina.
+
+Função anonima.
