@@ -40,8 +40,14 @@ for (var i = 0; i < pacientes.length; i++){
 
     // calcular o imc
     if (pesoEValido && alturaEValida){
-        var imc = peso / (altura ** 2);
+        var imc = CalculaImc(peso,altura);
         // atribui o calculo do imc na variavel tdImc
-        tdImc.textContent = imc.toFixed(2);
+        tdImc.textContent = imc;
     }
+}
+
+function CalculaImc(peso, altura){
+    var imc = 0
+    imc = peso / (altura ** 2);
+    return imc.toFixed(2);
 }
