@@ -40,3 +40,13 @@ Criar novos Elementos no HTML.
 event.preventDefault() previne o comportamento padrão de um formulario que é enviar os dados para outra pagina.
 
 Função anonima.
+------------------------------------------------------------------------------------------------------------
+_aula05_
+
+Dividir o código, separando por funcionalidades do sistema
+
+Os objetos em Javascript
+
+A quebrar funções grandes em funções menores ,com cada uma com sua responsabilidade
+
+A função form.reset() para limpar o formulário
