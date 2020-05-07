@@ -18,8 +18,7 @@ botaoAdicionar.addEventListener("click", function(event){
     //Extraindo informacoes do paciente do form
     var paciente = obtemPacienteDoFormulario(form);
 
-    //cria a tr e a td do paciente
-    var pacienteTr = montaTr(paciente);
+
 
     var erros = validaPaciente(paciente);
     console.log(erros);
@@ -29,9 +28,7 @@ botaoAdicionar.addEventListener("click", function(event){
         return; // Sai da função e não adiciona o paciente na tabela.
     }
 
-    // adicionar os pacientes na tabela
-    var tabela = document.querySelector("#tabela-pacientes");
-    tabela.appendChild(pacienteTr);
+    adicionaPacienteNaTabela(paciente);
 
     form.reset();
     var mensagemDeErro = document.querySelector("#mensagens-erro");
@@ -40,6 +37,14 @@ botaoAdicionar.addEventListener("click", function(event){
 });
 
 //event.preventDefault() previne o comportamento padrão de um formulario que é enviar os dados para outra pagina.
+
+function adicionaPacienteNaTabela(paciente){
+        //cria a tr e a td do paciente
+        var pacienteTr = montaTr(paciente);
+        // adicionar os pacientes na tabela
+        var tabela = document.querySelector("#tabela-pacientes");
+        tabela.appendChild(pacienteTr);
+}
 
 function exibeMensagensDeErro(erros){
     var ul = document.querySelector("#mensagens-erro");
